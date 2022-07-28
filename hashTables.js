@@ -23,6 +23,9 @@
 //      It should be a one-way function and produce the a different hash for each key.
 
 
+
+// WHEN TO USE
+
 // Hashing and trees perform similar jobs, but various factors in your program determine when to use one over the other.
 // Trees are more useful when an application needs to order data in a specific sequence.
 // Hash tables are the smarter choice for randomly sorted data due to its key-value pair organization.
@@ -56,7 +59,7 @@ class HashTable {
     // The next check we perform is on the hash. If it doesn’t have a key saved, we save the key and value and increment the size of our hash table.
     // Searching in a hash table goes very fast. Unlike with an array where we have to go through all of the elements until we reach the item we need, 
     // with a hash table we simply get the index.
-    
+
     add(key, value) {
       const hash = this.calculateHash(key);
       if (!this.values.hasOwnProperty(hash)) {

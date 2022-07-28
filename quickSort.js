@@ -4,6 +4,8 @@
 
 // HOW IT WORKS 
 
+// DIVIDE AND CONQUER
+
 // 1)First find the “pivot” element in the array.
 // 2)Start the left pointer at first element of the array.
 // 3)Start the right pointer at last element of the array.
@@ -79,7 +81,6 @@ function quickSort(items, left, right) {
 }
 // first call to quick sort
 var result = quickSort(items, 0, items.length - 1);
-
 
 
 // ALL THE FUNCTIONS COME TOGETHER TO MAKE QUICKSORT 
